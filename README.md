@@ -22,7 +22,7 @@ ros2 launch gnss_launch ublox_gps_node-zed_f9r.launch.py
 
 ### トピックの確認
 ```
-ros2 topic echo /fix
+ros2 topic echo /gnss/fix
 ```
 
 ## RTK測位の方法
@@ -53,7 +53,7 @@ GNSSと接続している機器をWiFiに接続してください。
 str2str -in ntrip://:@ntrip1.bizstation.jp:2101/0C06E596#rtcm3 -out serial://ttyACM0:115200
 ```
 
-### launchファイルの起動
+### launchファイルの起動（別端末）
 ```
 ros2 launch gnss_launch ublox_gps_node-zed_f9r.launch.py
 ```
