@@ -12,7 +12,7 @@ source install/setup.bash
 ### Install ublox package
 ```
 sudo apt update
-sudo apt install ros-$ROS-DISTRO-ublox
+sudo apt install ros-$ROS_DISTRO-ublox
 ```
 ### Launch GNSS
 ```
