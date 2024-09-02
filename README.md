@@ -7,6 +7,7 @@ mkdir -p ~/gnss_ws/src
 cd ~/gnss_ws/src
 git clone git@github.com:makotoyoshigoe/gnss_launch.git
 cd ../ && colcon build --symlink-install
+echo 'source ~/gnss_ws/install/setup.bash' >> ~/.bashrc
 source install/setup.bash
 ```
 ### ubloxパッケージのインストール
